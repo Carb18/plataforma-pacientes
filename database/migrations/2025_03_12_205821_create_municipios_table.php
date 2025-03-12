@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             // Definiendo campos y llaves foraneas.
             $table->id();
+            $table->string('nombre');
             $table->foreignId('departamento_id')->constrained('departamentos');
             $table->timestamps();
         });

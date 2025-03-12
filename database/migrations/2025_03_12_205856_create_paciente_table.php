@@ -15,7 +15,7 @@ return new class extends Migration
             // Definiendo los campos y llaves foraneas de la tabla paciente.
             $table->id();
             $table->foreignId('tipo_documento_id')->constrained('tipos_documento');
-            $table->string('numero_documeto');
+            $table->string('numero_documento');
             $table->string('nombre1');
             $table->string('nombre2')->nullable();
             $table->string('apellido1');
