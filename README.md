@@ -8,6 +8,8 @@
 </p>
 
 ## Prueba tecnica plataforma de pacientes.
+![image](https://github.com/user-attachments/assets/f73796f3-48ac-400b-a46f-2321e653aaae)
+
 
 ### Se manejó laravel para el desarrollo del CRUD.
 #### Para el entornor de trabajo y poner en marcha el proyecto se utilizó XAMPP y MySQL. El nombre de la base de datos por defecto es plataforma.
