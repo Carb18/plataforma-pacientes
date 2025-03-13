@@ -25,6 +25,7 @@ EL orden de ejecución es el siguiente;
 7. Una vez ejecutadas las migraciones y seeders e instalar las dependencias. Podemos poner en marcha la aplicación.
 8. Para no tener problemas con el CSS se ejecuta npm run dev y posteriormente en otra pestaña de la terminal php artisan serve.
 9. Una vez en ejecución todo lo necesario se tendrá acceso al CRUD con el manejo de los pacientes, tanto editarlos, listarlos, eliminarlos.
-10. Se manejó la estructura establecida en el documento recibido para la elaboración de la prueba. Se usaron las relaciones correspondientes a las tablas asi como los datos de prueba previamente establecidos en los seeders.
+10. El usuario administrador por defecto es admin@example.com y contraseña: 1234567890
+11. Se manejó la estructura establecida en el documento recibido para la elaboración de la prueba. Se usaron las relaciones correspondientes a las tablas asi como los datos de prueba previamente establecidos en los seeders.
 
 
