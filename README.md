@@ -9,4 +9,6 @@
 
 ## Prueba tecnica plataforma de pacientes.
 
+### Se manejó laravel para el desarrollo del CRUD.
+
 
