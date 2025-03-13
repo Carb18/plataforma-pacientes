@@ -3,6 +3,7 @@
 @section('title', 'Listado de Pacientes')
 
 @section('content')
+
     <h1 class="mb-4">Listado de Pacientes</h1>
 
     @if (session('success'))
@@ -37,12 +38,16 @@
                     <td>{{ $paciente->departamento->nombre }}</td>
                     <td>{{ $paciente->municipio->nombre }}</td>
                     <td>
-                        <a href="{{ route('pacientes.edit', $paciente->id) }}" class="btn btn-warning btn-sm">Editar</a>
-                        <form action="{{ route('pacientes.destroy', $paciente->id) }}" method="POST" class="d-inline">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este paciente?')">Eliminar</button>
-                        </form>
+                        <div class="mb-4">
+                            <a href="{{ route('pacientes.edit', $paciente->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                            <form action="{{ route('pacientes.destroy', $paciente->id) }}" method="POST" class="d-inline">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este paciente?')">Eliminar</button>
+                            </form>
+                        </div>
+                       
+                        
                     </td>
                 </tr>
             @endforeach

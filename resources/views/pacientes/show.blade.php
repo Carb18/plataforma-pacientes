@@ -9,7 +9,7 @@
         @csrf
         @method('PUT')
 
-        <!-- Los campos son los mismos que en create.blade.php, pero con valores predefinidos -->
+       
         <div class="mb-3">
             <label for="tipo_documento_id" class="form-label">Tipo de Documento</label>
             <select name="tipo_documento_id" id="tipo_documento_id" class="form-control" required>
@@ -19,7 +19,7 @@
             </select>
         </div>
 
-        <!-- Repite para los demás campos -->
+      
 
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>

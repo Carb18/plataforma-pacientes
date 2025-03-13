@@ -6,7 +6,7 @@ use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\MunicipioController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->Route('login');
 });
 
 Route::get('/dashboard', function () {
@@ -22,6 +22,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('pacientes', PacienteController::class)->middleware('auth');
-
+Route::get('/pacientes/{id}/edit', [PacienteController::class, 'edit'])->name('pacientes.edit');
 
 require __DIR__.'/auth.php';

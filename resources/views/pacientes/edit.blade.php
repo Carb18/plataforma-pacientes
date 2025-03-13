@@ -21,31 +21,31 @@
             </select>
         </div>
 
-        <!-- Número de Documento (solo números) -->
+        <!-- Número de Documento  -->
         <div class="mb-3">
             <label for="numero_documento" class="form-label">Número de Documento</label>
             <input type="text" name="numero_documento" id="numero_documento" class="form-control" value="{{ $paciente->numero_documento }}" pattern="\d+" title="Solo se permiten números" required>
         </div>
 
-        <!-- Primer Nombre (solo letras y espacios) -->
+        <!-- Primer Nombre  -->
         <div class="mb-3">
             <label for="nombre1" class="form-label">Primer Nombre</label>
             <input type="text" name="nombre1" id="nombre1" class="form-control" value="{{ $paciente->nombre1 }}" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" required>
         </div>
 
-        <!-- Segundo Nombre (solo letras y espacios, opcional) -->
+        <!-- Segundo Nombre  -->
         <div class="mb-3">
             <label for="nombre2" class="form-label">Segundo Nombre</label>
             <input type="text" name="nombre2" id="nombre2" class="form-control" value="{{ $paciente->nombre2 }}" pattern="[A-Za-z\s]*" title="Solo se permiten letras y espacios">
         </div>
 
-        <!-- Primer Apellido (solo letras y espacios) -->
+        <!-- Primer Apellido  -->
         <div class="mb-3">
             <label for="apellido1" class="form-label">Primer Apellido</label>
             <input type="text" name="apellido1" id="apellido1" class="form-control" value="{{ $paciente->apellido1 }}" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" required>
         </div>
 
-        <!-- Segundo Apellido (solo letras y espacios, opcional) -->
+        <!-- Segundo Apellido  -->
         <div class="mb-3">
             <label for="apellido2" class="form-label">Segundo Apellido</label>
             <input type="text" name="apellido2" id="apellido2" class="form-control" value="{{ $paciente->apellido2 }}" pattern="[A-Za-z\s]*" title="Solo se permiten letras y espacios">
@@ -79,7 +79,7 @@
         <div class="mb-3">
             <label for="municipio_id" class="form-label">Municipio</label>
             <select name="municipio_id" id="municipio_id" class="form-control" required>
-                <!-- Los municipios se cargarán dinámicamente con JavaScript -->
+              
             </select>
         </div>
 
