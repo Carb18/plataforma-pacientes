@@ -17,7 +17,8 @@
 EL orden de ejecución es el siguiente;
 
 1. Instalar XAMPP, Laravel, Composer y tener NodeJS instalado para hacer uso de NPM.
-2. Crear la base de datos desde phpMyAdmin usando la sentencia SQL create database plataforma, la cual será la base de datos a utilizar.
+2. Crear la base de datos desde phpMyAdmin usando la sentencia SQL create database plataforma, la cual será la base de datos a utilizar. En el archivo .env, por defecto esta la configuración para establecer
+la conexión con la base de datos, tanto el nombre de la bd, usuario y contraseña.
 3. Clonar el repositorio.
 4. Ejecutar las migraciones usando la interfaz de linea de comandos artisan. Utilizaremos php artisan migrate.
 5. Luego ejecutaremos los seeders previamente establecidos mediante php artisan db:seed
